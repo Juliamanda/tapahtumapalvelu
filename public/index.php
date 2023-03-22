@@ -1,7 +1,10 @@
 <?php
 
+  // Suoritetaan projektin alustusskripti.
+  require_once '../src/init.php';
+
   // Siistitään polku urlin alusta ja mahdolliset parametrit urlin lopusta.
-  $request = str_replace('/~jisotalo/tapahtumapalvelu','',$_SERVER['REQUEST_URI']);
+  $request = str_replace($config['urls']['baseUrl'],'',$_SERVER['REQUEST_URI']);
   $request = strtok($request, '?');
 
   // Selvitetään mitä sivua on kutsuttu ja suoritetaan sivua vastaava 
