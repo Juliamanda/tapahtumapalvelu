@@ -12,8 +12,8 @@
     <input id="email" type="email" name="email">
   </div>
   <div>
-    <label for="jäsennumero">SF-Caravan jäsennumero</label>
-    <input id="jäsennumero" type="text" name="jäsennumero">
+    <label for="jasennro">SF-Caravan jäsennumero</label>
+    <input id="jasennro" type="text" name="jasennro">
   </div>
   <div>
     <label for="salasana1">Salasana:</label>
