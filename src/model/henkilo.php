@@ -12,5 +12,11 @@
   function haeHenkilo($email) {
     return DB::run('SELECT * FROM jasen WHERE email = ?;', [$email])->fetch();
   }
+  function paivitaVahvavain($email,$avain) {
+    return DB::run('UPDATE jasen SET vahvavain = ? WHERE email = ?', [$avain,$email])->rowCount();
+  }
+  function vahvistaTili($avain) {
+    return DB::run('UPDATE jasen SET vahvistettu = TRUE WHERE vahvavain = ?', [$avain])->rowCount();
+  }
 
 ?>
