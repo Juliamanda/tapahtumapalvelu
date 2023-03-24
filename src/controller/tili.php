@@ -119,7 +119,12 @@ function lisaaTili($formdata, $baseurl='') {
       ];
     }
     } else {
-
+        return [
+          "status" => 500,
+          "data" =>  $formdata
+        ];
+      }
+    } else {
 
     // Lomaketietojen tarkistuksessa ilmeni virheitä.
     return [
@@ -144,7 +149,6 @@ function lisaaTili($formdata, $baseurl='') {
              "Terveisin, Lanify-palvelu";
     return mail($email,'Lanify-tilin aktivointilinkki',$message);
   }
-}
 function lahetaVaihtoavain($email,$url) {
   $message = "Hei!\n\n" .
              "Olet pyytänyt tilisi salasanan vaihtoa, klikkaamalla\n" .
