@@ -144,6 +144,6 @@ function lisaaTili($formdata, $baseurl='') {
              "Terveisin, Lanify-palvelu";
     return mail($email,'Lanify-tilin aktivointilinkki',$message);
   }
-
+}
 
 ?>
