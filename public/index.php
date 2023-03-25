@@ -25,7 +25,10 @@
     // Selvitetään mitä sivua on kutsuttu ja suoritetaan sivua vastaava
     // käsittelijä.
     switch ($request) {
-        case '/':
+        case '/';
+        case '/etusivu':
+          echo $templates->render('etusivu');
+          break;
         case '/tapahtumat':
           require_once MODEL_DIR . 'tapahtuma.php';
           $tapahtumat = haeTapahtumat();
