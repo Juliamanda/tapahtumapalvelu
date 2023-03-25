@@ -19,6 +19,11 @@
         ?>
       </div>
     </header>
+      <ul>
+        <li><a href="etusivu">Etusivu</a></li>
+        <li><a href="tapahtumat">Tapahtumat</a></li>
+        <li><a href="jasensivu">Jäseneksi</a></li>
+      </ul>
     <section>
       <?=$this->section('content')?>
     </section>

@@ -1,12 +1,3 @@
-<div class='valikko'></div>
-          <nav>
-            <ul>
-              <li><a href="etusivu">Etusivu</a></li>
-              <li><a href="tapahtumat">Tapahtumat</a></li>
-              <li><a href="jasensivu">Jäseneksi</a></li>
-            </ul>
-          </nav>
-
 <?php
     // Aloitetaan istunnot.
     session_start();
