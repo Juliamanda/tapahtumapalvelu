@@ -1,3 +1,12 @@
+<div class='valikko'></div>
+          <nav>
+            <ul>
+              <li><a href="etusivu">Etusivu</a></li>
+              <li><a href="tapahtumat">Tapahtumat</a></li>
+              <li><a href="jasensivu">Jäseneksi</a></li>
+            </ul>
+          </nav>
+
 <?php
     // Aloitetaan istunnot.
     session_start();
@@ -28,6 +37,9 @@
         case '/';
         case '/etusivu':
           echo $templates->render('etusivu');
+          break;
+        case '/jasensivu':
+          echo $templates->render('jasensivu');
           break;
         case '/tapahtumat':
           require_once MODEL_DIR . 'tapahtuma.php';
