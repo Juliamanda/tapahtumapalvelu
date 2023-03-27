@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fi">
   <head>
-    <title>Karavaanarit ry - <?=$this->e($title)?></title>
+    <title>Karavaanarit - <?=$this->e($title)?></title>
     <meta charset="UTF-8"> 
     <link href="styles/styles.css" rel="stylesheet">   
   </head>
   <body>
     <header>
-      <h1><a href="<?=BASEURL?>">Karavanaarit ry</a></h1>
+      <h1><a href="<?=BASEURL?>">Karavanaarit</a></h1>
       <div class="profile">
         <?php
           if (isset($_SESSION['user'])) {
@@ -29,7 +29,7 @@
     </section>
     <footer>
       <hr>
-      <div>Karavaanarit ry by Kurpitsa</div>
+      <div>Karavaanarit by Kurpitsa</div>
     </footer>
   </body>
 </html>
