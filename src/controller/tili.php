@@ -137,17 +137,17 @@ function lisaaTili($formdata, $baseurl='') {
 }
   function lahetaVahvavain($email,$url) {
     $message = "Hei!\n\n" . 
-             "Olet rekisteröitynyt Lanify-palveluun tällä\n" . 
+             "Olet rekisteröitynyt Karavaanarit-palveluun tällä\n" . 
              "sähköpostiosoitteella. Klikkaamalla alla olevaa\n" . 
              "linkkiä vahvistat käyttämäsi sähköpostiosoitteen\n" .
-             "ja pääset käyttämään Lanify-palvelua.\n\n" . 
+             "ja pääset käyttämään Karavaanarit-palvelua.\n\n" . 
              "$url\n\n" .
-             "Jos et ole rekisteröitynyt Lanify palveluun, niin\n" . 
+             "Jos et ole rekisteröitynyt Karavaanarit palveluun, niin\n" . 
              "silloin tämä sähköposti on tullut sinulle\n" .
              "vahingossa. Siinä tapauksessa ole hyvä ja\n" .
              "poista tämä viesti.\n\n".
-             "Terveisin, Lanify-palvelu";
-    return mail($email,'Lanify-tilin aktivointilinkki',$message);
+             "Terveisin, Karavaanarit-palvelu";
+    return mail($email,'Karavaanarit-tilin aktivointilinkki',$message);
   }
 function lahetaVaihtoavain($email,$url) {
   $message = "Hei!\n\n" .
@@ -157,8 +157,8 @@ function lahetaVaihtoavain($email,$url) {
              "$url\n\n" .
              "Jos et ole pyytänyt tilisi salasanan vaihtoa, niin\n" .
              "voit poistaa tämän viestin turvallisesti.\n\n" .
-             "Terveisin, Lanify-palvelu";
-  return mail($email,'Lanify-tilin salasanan vaihtaminen',$message);
+             "Terveisin, Karavaanarit-palvelu";
+  return mail($email,'Karavaanarit-tilin salasanan vaihtaminen',$message);
 }
 
 function luoVaihtoavain($email, $baseurl='') {
